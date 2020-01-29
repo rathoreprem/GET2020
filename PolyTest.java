@@ -9,39 +9,40 @@ import org.junit.Test;
 
 public class PolyTest {
 	
-	ArrayList<Integer> arr=new ArrayList<Integer>(Arrays.asList(1,3,6,7,9,8));
-	ArrayList<Integer> arr1=new ArrayList<Integer>(Arrays.asList(2,3,4,5,6,9));
-	Operation op= new Operation(arr);
+	ArrayList<Integer> arr=new ArrayList<Integer>(Arrays.asList(4,0,2,1,4,4));
+	ArrayList<Integer> arr1=new ArrayList<Integer>(Arrays.asList(3,0,-7,1,5,3,-8,5));
+	Operation obj= new Operation(arr);
+	Operation obj1= new Operation(arr1);
 	@Test
 	public void test() 
 	{
 		
-		int result=op.degree();
-		int expected=8;
+		int result=obj.degree();
+		int expected=4;
 		assertEquals(expected,result);
 	}
 	
 	@Test
 	public void Test1()
 	{
-		ArrayList<Integer> result=op.addition(arr,arr1);
-		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(3, 6, 10, 12, 15,17));
+		ArrayList<String> result=obj.addition(obj,obj1);
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(7, 0, -5, 1, 5, 3, 4, 4, -8, 5));
 		assertEquals(expected,result);
 	}
 	
 	@Test
 	public void Test2()
 	{
-		ArrayList<Integer> result=op.multiply(arr,arr1);
-		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(2, 9, 25, 49, 84, 128, 158, 173, 157, 129, 72, 0));
+		ArrayList<String> result=obj.multiply(obj,obj1);
+		ArrayList<Integer> expected = new ArrayList<Integer>(Arrays.asList(12,0, -28,1, 20,3, -32,5, 6,1, -14,2, 10,4, -16,6, 12,4, -28,5, 20,7, -32,9, -24,5, 56,6, -40,8, 64,10));
 		assertEquals(expected,result);
 	}
 	
 	@Test
 	public void Test3()
 	{
-		int result=op.calculate(2);
-		int expected = 3080;
+		int result=obj.calculate(4);
+		int expected = 1036;
 		assertEquals(expected,result);
 		
 	}
