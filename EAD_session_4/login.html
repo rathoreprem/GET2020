@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style>
+body{
+background-color:#ddd;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: #333;
+	 margin:-8px;
+}
+
+#navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+ 
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+form{
+	background-color: darkcyan;
+	border-radius: 10px;
+	    margin-top: 10%;
+    padding: 43px;
+    font-size:24px;
+}</style>
+<body>
+
+</head>
+<body>
+	<div id="navbar">
+	  <a class="active" href="">Home</a>
+	  <a href="">News</a>
+	  <a href="">Contact</a>
+	  <a href="">Friend</a>
+	  <a href="">Edit</a>
+	  <a class="login" href="">Login</a>
+	  <a class="signup"href="">Sign up</a>
+	  <a href="home.html">Log Out</a>
+	</div>
+<form action="UserLogin" method="post">
+ 
+  <div class="container">
+	  <br/><br/>
+	    <label>
+	    	<b>Username</b>
+	    </label>
+	    <br>
+	    <input type="text" placeholder="Enter Username" name="username" required>
+	    <br/><br/>
+		<label>
+	    	<b>Password</b>
+	    </label>
+	    <br/>
+	    <input type="password" placeholder="Enter Password" name="password" required>
+	    <br/><br/>    
+	    <span class="psw">
+	    	Forgot <a href="#">password?</a>
+	    </span>
+	    <label>
+	      <input type="checkbox" checked="checked" name="remember"> Remember me
+	    </label>
+	  	<br/>
+	    <button type="button" class="cancelbtn">Cancel</button>
+	    <button type="submit">Login</button>
+   </div>
+</form>
+</body>
+</html>

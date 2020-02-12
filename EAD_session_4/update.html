@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<form action="Update" method="post">
+		<h1> Registration Here</h1>
+	        <input id="empName" type="text" name="fullname" placeholder="Name" required><br/><br/> Geneder:
+	        <label>
+	        	<input type="radio" value="Male" name="gender">Male
+	        </label>
+	        <label>
+	        	<input type="radio" value="Female" name="gender">Female
+	        </label>
+	        <br/>
+	        <br/>
+	        Organization:
+	        <select name="organization" style="color: black;">
+	            <option>tcs</option>
+	            <option>infosys</option>
+	            <option>metacube</option>
+	            <option>celebal</option>
+	        </select>
+	        <br/>
+	        <br/>
+	        <input id="email" type="text" name="email" placeholder="Email Id" required><br/>
+	        <input id="psw" type="password" name="password" placeholder="Password" required><br/>
+	        <input id="cpsw" type="password" name="cpassword" placeholder="Confirm Passsword" required><br/>
+	        <input id="mobilenumber" type="text" name="mobile_no" placeholder="Conatct Number" required><br/><br/>
+	       	<input id="empid" type="text" name="empid" placeholder="empid" required><br/><br/>
+	        <input type="submit" value="Go" onclick="validateRegistratioForm()" style="width: 15%;border-radius: 10px;">
+	        <input type="button" value="Reset" style="width: 15%;border-radius: 10px;">
+    		<br><br>
+	</form>
+</body>
+</html>
