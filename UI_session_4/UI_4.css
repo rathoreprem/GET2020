@@ -1,0 +1,464 @@
+#homebg {
+    width: 100%;
+    position: absolute;
+}
+
+#logo {
+    position: absolute;
+    margin-left: 140px;
+    margin-top: 20px;
+    height: 15px;
+}
+
+#phone1 {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 140px;
+    height: 400px; 
+    animation: screen1 1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes screen1{
+    from{right: 0px;}
+    to{right: 200px;}
+    
+  
+}
+phone1:hover{
+    opacity: 2px;
+}
+
+
+#test1 {
+    position: absolute;
+    margin-left: 480px;
+    margin-top: 1000px;
+    height: 420px;
+}
+
+#drag1 {
+    position: absolute;
+    margin-left: 320px;
+    margin-top: 1000px;
+    height: 350px;
+}
+
+#drag2 {
+    position: absolute;
+    margin-left: 880px;
+    margin-top: 1000px;
+    height: 350px;
+}
+
+#downloadButton {
+    color: white;
+    background-color: red;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 150px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border: 0px solid red;
+    border-radius: 5px;
+    text-shadow: 3px 3px black;
+}
+
+#featureButton {
+    color: white;
+    background-color: blue;
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 370px;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border: 0px solid blue;
+    border-radius: 5px;
+}
+
+#writeMessage {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    margin-left: 150px;
+    margin-top: 200px;
+    font-weight: bolder;
+    text-shadow: 4px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#screen01 {
+    position: absolute;
+    margin-left: 470px;
+    margin-top: 1540px;
+    height: 300px;
+    animation: screen01 2s ;
+    animation-fill-mode: forwards;
+    opacity: 1;
+    display: block;
+   
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+@keyframes screen01{
+    from{left: -25px;}
+    to{left: 75px;}
+}
+
+#middle1 {
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 1540px;
+    height: 300px;
+    color: black;
+    display: none;
+    font-size: 160px;
+  }
+  #image1:hover>#middle1{
+    opacity: 1;
+    margin-left:0px ;
+    margin-top: 1680px;
+    display: inline;
+  }
+  #image1:hover>#screen01{
+      opacity:0.2;
+  }
+
+#screen02 {
+    position: absolute;
+    margin-left: 830px;
+    margin-top: 2000px;
+    height: 300px;
+     animation: screen02 2s ;
+    animation-fill-mode: forwards;
+}
+@keyframes screen02{
+    from{right: 400px;}
+    to{right: 500px;}
+}
+
+#middle2 {
+    position: absolute;
+    margin-left: 930px;
+    margin-top: 2100px;
+    height: 300px;
+    color: black;
+    display: none;
+    font-size: 160px;
+}
+  #image2:hover>#middle2{
+    opacity: 1;
+    margin-left:740px ;
+    margin-top: 2140px;
+    display: inline;
+    
+  }
+  #image2:hover>#screen02{
+      opacity:0.2;
+  }
+#screen03 {
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 2440px;
+    height: 300px;
+    animation: screen03 2s ;
+    animation-fill-mode: forwards;
+}
+@keyframes screen03{
+    from{left: 0px;}
+    to{left: 75px;}
+}
+
+#middle3 {
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 2540px;
+    height: 300px;
+    color: black;
+    display: none;
+    font-size: 160px;
+  }
+  #image3:hover>#middle3{
+    opacity: 1;
+    margin-left:230px ;
+    margin-top: 2540px;
+    display: inline;
+  }
+  #image3:hover>#screen03{
+      opacity:0.2;
+  }
+
+#homebgagain {
+    position: absolute;
+    margin-top: 3200px;
+    width: 100%;
+    height: 500px;
+}
+
+#appstor {
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 3440px;
+    height: 40px;
+}
+
+#appdownload1 {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 3300px;
+    height: 300px;
+}
+
+#googleplay {
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 3440px;
+    height: 40px;
+}
+
+#footer-logo {
+    position: absolute;
+    margin-left: 230px;
+    margin-top: 20px;
+    height: 20px;
+}
+
+#footer {
+    background-color: black;
+    position: absolute;
+    height: 200px;
+    width: 100%;
+    margin-top: 3600px;
+}
+
+#cloud1 {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 1540px;
+    height: 40px;
+}
+
+#sun1 {
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 2000px;
+    height: 40px;
+}
+
+#rainy1 {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 2440px;
+    height: 40px;
+}
+
+#cloudmsg {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 1590px;
+    height: 40px;
+    width: 300px;
+}
+
+#sunmsg {
+    position: absolute;
+    margin-left: 330px;
+    margin-top: 2050px;
+    height: 40px;
+    width: 300px;
+}
+
+#rainymsg {
+    position: absolute;
+    margin-left: 730px;
+    margin-top: 2490px;
+    height: 40px;
+    width: 380px;
+}
+
+.msghead {
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.msgbody {
+    color: black;
+}
+
+#downloadheading {
+    color: white;
+    margin-top: 3300;
+    position: absolute;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-left: 200px;
+}
+
+#downloadbody {
+    color: white;
+    margin-top: 3350;
+    position: absolute;
+    font-size: 20px;
+    font-weight: bolder;
+    margin-left: 200px;
+    width: 425px;
+}
+
+.foot-items {
+    color: white;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+#foot-links {
+    margin-top: 3620;
+    position: absolute;
+    margin-left: 450px;
+}
+
+#head-links {
+    margin-top: 20;
+    position: absolute;
+    margin-left: 450px;
+}
+
+#copyrightmsg {
+    margin-top: 3740;
+    position: absolute;
+    margin-left: 600px;
+    color: #890;
+}
+
+#line {
+    margin-top: 3720;
+    position: absolute;
+    margin-left: 60px;
+    background-color: #890;
+    width: 90%;
+    height: 1px;
+}
+
+#heading {
+    font-size: 30px;
+    font-weight: bolder;
+    color: #1ad;
+    animation: heading 2s infinite;
+    animation-fill-mode: forwards;
+}
+@keyframes heading{
+    from{top: 0px;}
+    to{top: 100px;}
+
+}
+
+#message {
+    font-size: 17px;
+    color: #258;
+    text-align: center;
+}
+
+#screenshot {
+    margin-top: 1450px;
+    position: absolute;
+    margin-left: 600px;
+    
+}
+
+#perfectfeature {
+    margin-top: 700px;
+    position: absolute;
+    margin-left: 600px;
+}
+
+.quoteheading {
+    color: black;
+    width: 300px;
+    font-size: 25px;
+    font-weight: bolder;
+    animation: quoteheading 1s ;
+    animation-fill-mode: forwards;
+}
+@keyframes quoteheading{
+    from{top: 0px;}
+    to{top: 200px;}
+    
+  
+
+}
+
+.quote {
+    color: black;
+    width: 250px;
+    font-size: 15px;
+}
+
+#quotesection1 {
+    margin-top: 800px;
+    position: absolute;
+    margin-left: 200px;
+   
+}
+
+#quotesection2 {
+    margin-top: 800px;
+    position: absolute;
+    margin-left: 600px;
+   
+}
+
+
+#quotesection3 {
+    margin-top: 800px;
+    position: absolute;
+    margin-left: 1000px;
+    
+}
+
+#review {
+    position: absolute;
+    margin-top: 2770px;
+}
+
+#reviewheading {
+    margin-left: 500px;
+}
+
+#reviewtag {
+    margin-left: 630px;
+    font-size: 15px;
+}
+
+.reviewquote {
+    font-size: 25px;
+    font-weight: bold;
+    width: 450px;
+}
+
+.writer {
+    font-size: 15px;
+    font-style: italic;
+}
+
+#review1 {
+    margin-left: 130px;
+    position: absolute;
+}
+
+#review2 {
+    margin-left: 700px;
+    position: absolute;
+}
+
+#review3 {
+    margin-left: 130px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+#review4 {
+    margin-left: 700px;
+    position: absolute;
+    margin-top: 200px;
+}
