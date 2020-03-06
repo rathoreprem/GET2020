@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body style="background-image:linear-gradient(to right, #ff5722, #ff9800);">
+    <h1 style="background-color: bisque;margin: -8px;padding: 10px;">METACUBE PARKERS</h1>
+  		<form action="Pass" method="post" id="car">
+        	<div>
+            	<div>
+                	<h1> Please Select A Plan</h1>
+                		<div id="car" style="display: block;">
+		                    <label>
+		                    	<input type="radio" value="20" onclick="car(this)" name="currency" >20 daily
+		                    </label>
+		                    <label>
+		                    	<input type="radio" value="500" onclick="car(this)" name="currency" >500 monthly
+		                    </label>
+		                    <label>
+		                    	<input type="radio" value="3500" onclick="car(this)" name="currency" >3500 yearly
+		                    </label>
+		                    <br/><br/>
+		                 </div>
+				</div>
+			</div>
+	</form>
+	<form id="rupaye" style="display:none" action="Pass" method="post">
+        <div>
+            <label>
+            		<input type="radio" value="INR" onclick="rupaye(this)" name="currency" >INR
+            </label>
+            <label>
+           	 		<input type="radio" value="USD" onclick="rupaye(this)" name="currency" >USD
+            </label>
+            <label>
+            		<input type="radio" value="YEN" onclick="rupaye(this)" name="currency" >YEN
+            </label>
+            <br/>
+            <br/>
+            <input type="text" id="stoped" value="0" name="finalPay" >
+            <input type="button" onclick="abc()" value="Pay Now">
+            <br/><br/>
+        </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Registration Form</title>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<style>
+    form {
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 60%;
+    }
+    s
+    h1 form {
+        color: rgb(7, 32, 32);
+    }
+    
+    form input[ type=password],
+    [type=text] {
+        font-size: 18px;
+        font-style: normal;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 60%;
+        transition: 0.5s;
+        margin: 10px;
+        padding: 5px 10px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid grey;
+    }
+    
+    form input[type=text],
+     :focus {
+        color: #fff;
+        border-radius: 10px;
+    }
+</style>
+<body style="background-image:linear-gradient(to right, #ff5722, #ff9800);">
+    <h1 style="background-color: bisque;margin: -8px;padding: 10px;">METACUBE PARKERS</h1>
+  	<form action="vehicle" method="post" id="vehicle" style="display: block;">
+        <h1> Fill Vehicle Details</h1>
+        <input type="text" name="vname" placeholder="Name" required><br/><br/>Vehicle Type(CAR,CYCLE,MOTORCYCLE)
+   		<br/>
+   		<br/>
+        <select name="vtype" id="type" style="color: black;">
+            <option>cycle</option>
+            <option>motorcycle</option>
+            <option>car</option>
+        </select>
+        <br/><br/>
+        <input type="text" name="vnumber" placeholder="Vehicle Number" required>
+        <br/>
+        <input id="rid" type="text" name="employeeid" placeholder="Employee Id" required>
+        <br/><br/>
+        <textarea name="description" style="color: black;
+                                border-radius:10px;
+                                width: 70%;" 
+                                placeholder="description " required>
+        </textarea>
+        <br/>
+        <input type="submit" value="Go" style="width: 15%;border-radius: 10px;">
+        <input type="button" value="Reset" style="width: 15%;border-radius: 10px;">
+    </form>
+</body>
+</html>

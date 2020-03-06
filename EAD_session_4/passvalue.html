@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+	<form id="rupaye">
+	        <div>
+	            <label>
+	            	<input type="radio" value="INR" onclick="rupaye(this)" name="currency" >INR
+	            </label>
+	            <label>
+	            	<input type="radio" value="USD" onclick="rupaye(this)" name="currency" >USD
+	            </label>
+	            	<label>
+	            <input type="radio" value="YEN" onclick="rupaye(this)" name="currency" >YEN
+	            	</label>
+	            <br/>
+	            <br/>
+		        <input id="stop" disabled>
+		        <input type="button" value="Pay Now" onclick="alert('Thank you')">
+	        </div>
+	</form>
+</body>
+</html>

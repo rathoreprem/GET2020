@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Registration Form</title>
+<script type="text/javascript" src="js/script.js"></script></head>
+<style>
+    form {
+        margin: 0;
+        padding-top: 10px;
+        padding-left: 60%;
+    }
+    
+    h1 form {
+        color: rgb(7, 32, 32);
+    }
+    
+    form input[ type=password],
+    [type=text] {
+        font-size: 18px;
+        font-style: normal;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        width: 60%;
+        transition: 0.5s;
+        margin: 10px;
+        padding: 5px 10px;
+        border: 0;
+        outline: 0;
+        background: transparent;
+        border-bottom: 1px solid grey;
+    }
+    
+    form input[type=text],
+     :focus {
+        color: #fff;
+        border-radius: 10px;
+    }
+</style>
+
+<body style="background-image:linear-gradient(to right, #ff5722, #ff9800);">
+    <h1 style="background-color: bisque;margin: -8px;padding: 10px;">METACUBE PARKERS</h1>
+    <form id="empRegisterationForm" action="Signup" method="post">
+        <h1> Registration Here</h1>
+        <input id="empName" type="text" name="fullname" placeholder="Name" required><br/><br/> Geneder:
+        <label><input type="radio" value="Male" name="gender">Male</label>
+        <label><input type="radio" value="Female" name="gender">Female</label><br/><br/> Organization:
+        <select name="organization" style="color: black;">
+            <option>tcs</option>
+            <option>infosys</option>
+            <option>metacube</option>
+            <option>celebal</option>
+        </select><br/><br/>
+        <input id="email" type="text" name="email" placeholder="Email Id" required><br/>
+        <input id="psw" type="password" name="password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br/>
+        <input id="cpsw" type="password" name="cpassword" placeholder="Confirm Passsword" required><br/>
+        <input id="mobilenumber" type="text" name="mobile_no" placeholder="Conatct Number" required><br/><br/>
+       <input id="empid" type="text" name="empid" placeholder="empid" required><br/><br/>
+        <input type="button" value="Go" onclick="validateRegistratioForm()" style="width: 15%;border-radius: 10px;" />
+        <input type="button" value="Reset" style="width: 15%;border-radius: 10px;" />
+    </form><br><br>
+
+   
+</body>
+
+</html>
