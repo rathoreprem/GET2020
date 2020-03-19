@@ -1,0 +1,104 @@
+<html>
+
+<head>
+    <!-- title of the web page-->
+    <title>
+        metacube parking
+    </title>
+    <link rel="stylesheet" type="text/css" href="" media="screen" />
+    <script src="UI_7.js"></script>
+</head>
+<!-- body of the web page-->
+
+<body>
+    <h1 id="heading">Employee Registration</h1>
+    <form>
+        <table id="employeeTable">
+            <tr id="fullname">
+                <td>Full Name</td>
+                <div id="error"></div>
+                <td> <input type="text" id="employeeName" onkeydown="fullname()" required></td>
+            </tr>
+            <tr id="gender" style="display: none;">
+                <td>Gender</td>
+                <td><label> <input type="radio" name="gender" value="male" onclick="genders()" >Male</label>
+                    <label> <input type="radio" name="gender" value="female" onclick="genders()" >Female</label>
+                    <label> <input type="radio" name="gender" value="others" onclick="genders()" >Others</label>
+                </td>
+                <tr id="employeeEmail" style="display: none;">
+                    <td>Email</td>
+                    <td> <input type="email" id="employeeEmails" onkeydown="email()" required></td>
+                </tr>
+                <tr id="password" style="display: none;">
+                    <td>Password</td>
+                    <td> <input type="password" id="employeePassword" onkeydown="password()" required></td>
+                </tr>
+                <tr id="confirmpassword" style="display: none;">
+                    <td>Confirm Password</td>
+                    <td> <input type="password" id="employeeConfirmPassword" onkeydown="confirmpassword()" required></td>
+                </tr>
+                <tr id="number" style="display: none;">
+                    <td>Contact Number</td>
+                    <td> <input type="number" id="employeeContact" onkeydown="number()" required></td>
+                </tr>
+                <tr id="vehicleCompanyName" style="display: none;">
+                    <td>Vehicle Company Name</td>
+                    <td> <input type="text" onkeydown="vehicleCompanyName()" required></td>
+                </tr>
+
+                <tr id="vehicleModel" style="display: none;">
+                    <td>Vehicle Model</td>
+                    <td><input type="text" onkeydown="vehicleModel()" required></td>
+                </tr>
+                <tr id="Types" style="display: none;">
+                    <td>Type</td>
+                    <td>
+                        <select onkeydown="Type()" id="Typess">
+                        <option value="cycle">cycle</option>
+                        <option value=motorcycle>MotorCycle</option>
+                        <option value="car">Four Wheeler</option>
+                    </select>
+                    </td>
+                </tr>
+                <tr id="vehicleNumber" style="display: none;">
+                    <td>Vehicle Number</td>
+                    <td> <input type="text" onkeydown="vehicleNumber()" required></td>
+                </tr>
+                <tr id="EmployeeId" style="display: none;">
+                    <td>Employee Id</td>
+                    <td> <input id=empid type="text" onkeydown="EmployeeId()" required></td>
+                </tr>
+                <tr id="identification" style="display: none;">
+                    <td>identification</td>
+                    <td> <input type="text" onkeydown="vehicleIdentification()" required></td>
+                </tr>
+            </tr>
+        </table>
+        <div id="pass" style="display: none;">
+            <div id="cycle" style="display: none;">
+                <div><input type="radio" value="d10" name="currency" onclick="getpass(this)">5 Daily </div>
+                <div><input type="radio" value="m20" name="currency" onclick="getpass(this)">100 Monthly </div>
+                <div><input type="radio" value="y30" name="currency" onclick="getpass(this)">500 Yearly </div>
+            </div>
+            <div id="motor" style="display: none;">
+                <div><input type="radio" value="d10" name="currency" onclick="getpass(this)">10 Daily </div>
+                <div><input type="radio" value="m20" name="currency" onclick="getpass(this)">200 Monthly </div>
+                <div><input type="radio" value="y30" name="currency" onclick="getpass(this)">1000 Yearly </div>
+            </div>
+            <div id="car" style="display: none;">
+                <div><input type="radio" value="d10" name="currency" onclick="getpass(this)">20 Daily </div>
+                <div><input type="radio" value="m20" name="currency" onclick="getpass(this)">500 Monthly </div>
+                <div><input type="radio" value="y30" name="currency" onclick="getpass(this)">3500 Yearly </div>
+            </div>
+        </div>
+        <div id="rupaye" style="display: none;">
+            <div><input type="radio" value="INR" name="cycle" onclick="rupaye(this)">INR</div>
+            <div><input type="radio" value="USD" name="cycle" onclick="rupaye(this)">YEN</div>
+            <div><input type="radio" value="YEN" name="cycle" onclick="rupaye(this)">USD</div>
+        </div>
+        <input id="stop" style="display: none;" disabled>
+        <input id="pay" type="button" style="display: none;" value="Pay Now" onclick="alert('Thank you')">
+    </form>
+</body>
+
+</html>
