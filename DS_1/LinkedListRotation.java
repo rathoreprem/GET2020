@@ -1,37 +1,45 @@
 package datastructure_1;
 import java.util.Scanner;
-/**
- * 
- * @author Abhishek
- * this class rotate the linked list according the provided left index and right index according provided number 
- */
 public class LinkedListRotation {
 	/**
 	 * @return the head node of linked list after creating the linked list
 	 */
-	public Node createList() {
-		System.out.println("Enter number of elements to add in list");
-		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		Node head=null;
-		Node tempNode=null;
-		System.out.println("Enter "+n+" elements data to create linked list");
-		for(int i=0;i<n;i++)
-		{
-			Node node=new Node(sc.nextInt());
-			if(head==null)
+	public Node createList() 
+	{
+			System.out.println("Enter number of elements to add in list");
+			Scanner sc=new Scanner(System.in);
+			int n=sc.nextInt();
+			Node head=null;
+			Node tempNode=null;
+			
+			if(n<0) 
 			{
-				head=node;
-				tempNode=head;
+				System.out.println("Enter a valid Input");
 			}
-			else 
+			
+			else
 			{
-				tempNode.next=node;
-				tempNode=tempNode.next;
+				System.out.println("Enter "+n+" elements data to create linked list");
+				for(int i=0;i<n;i++)
+				{
+					Node node=new Node(sc.nextInt());
+					if(head==null)
+					{
+						head=node;
+						tempNode=head;
+					}
+					else 
+					{
+						tempNode.next=node;
+						tempNode=tempNode.next;
+					}
+					
+				}
 			}
-		}
+		
 		return head;
 	}
+
 	/**
 	 * 
 	 * @param head the starting node of linked list
@@ -159,27 +167,56 @@ public class LinkedListRotation {
 			tempNode=tempNode.next;
 		}
 		System.out.println();
-			}
+		}
 	public static void main(String[] args) {
 		LinkedListRotation linkedListRotation=new LinkedListRotation();
 		Node head=null;
+		try {
 		head=linkedListRotation.createList();
-		int L,R,N;
+		if(head!=null)
+		{
+		int L,R = 0,N = 0;
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter the Left index to rotate");
 		L=sc.nextInt();
-		System.out.println("Enter the right index to rotate");
-		R=sc.nextInt();
-		System.out.println("Enter the number of rotations");
-		N=sc.nextInt();
+		if(L<0) 
+		{	System.out.println("Enter a valid no.");
+		}
+		else
+		{
+			System.out.println("Enter the right index to rotate");
+			R=sc.nextInt();
+		
+			if(L>R) 
+			{	
+				System.out.println("Never Right Index is lower then Left Index");
+			}
+			else 
+			{
+				System.out.println("Enter the number of rotations");
+				N=sc.nextInt();
+				if(N<0) {
+					System.out.println("Enter a valid no.");
+				}
+				else {
+		
 		System.out.println("list Before Rotation");
 		linkedListRotation.printList(head);
 		head=linkedListRotation.RotateList(head, L, R, N);
 		System.out.println("list after Rotation");
 		linkedListRotation.printList(head);
-
-	}
-
+				}
+			}
+		}
+		}
+		}
+			catch (Exception e)
+			{
+				System.out.println("enter a valid input");
+			}
+			}
+		
+	
 
 }
 /**
